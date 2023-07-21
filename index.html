@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body  class="">
+    <div class="  text-center m-5">
+        <h1>Bookmarker</h1>
+    </div>
+
+
+    <div class="container ">
+        <div class="dotted-head">
+            <div class="text-center py-5 fs-5  head-contant">
+                <i class="fs-2 fw-bold fa-regular fa-bookmark"></i>
+                <span class=" fs-2 fw-bold">Bookmark your favorite sites</span>
+                <i class=" fs-2 fw-bold  fa-regular fa-bookmark"></i>
+            </div>
+            <div class="mb-3">
+                <i class="fa-solid  fs-5  fa-book-bookmark"></i>
+                <label for="inputName" class="form-label fs-5 fw-bold  px-4">Site Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Bookmark Name"
+                    aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <i class="fa-solid fs-5 fa-link"></i>
+                <label for="inputUrl" class="form-label fs-5 fw-bold  px-4">Site URL</label>
+                <input type="url" class="form-control" placeholder="Website URL" id="inputUrl">
+            </div>
+            <div class="mt-4 text-center ">
+                <button onclick="addWebsiteFavorite()" class="btn btn-primary  px-5">Submit</button>
+            </div>
+        </div>
+
+        <table class="  table table-hover table-light table-striped ">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+              
+            </tbody>
+        </table>
+    </div>
+
+   
+   
+   
+
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(248, 239, 228);
+    font-family: "PT Sans Caption", sans-serif;
+}
+.dotted-head{
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+    padding-bottom: 30px;
+}
+
+.head-contant i{
+    color: rgb(79, 86, 67);
+
+}
+.message{
+    position:absolute ;
+    top: 50%;
+    left: 50%;
+    width: 500PX;
+    transform: translate(-50% , -50%);
+    background-color: aqua;
+}
+h1{
+
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+}
+ h1::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 20px;
+    left: 50%;
+    bottom: 50%;
+    bottom:  470px;
+    transform: translate(-50%);
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+  }
+   h1:hover::before {
+    height: 30px;
+  }
